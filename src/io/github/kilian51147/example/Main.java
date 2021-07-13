@@ -11,6 +11,7 @@ public class Main
 	{
 		config.setLanguage(Language.SPANISH);
 		
+		//Get the Translation frome the lang file
 		System.out.println(config.get("test.one"));
 		System.out.println(config.get("test.two"));
 		System.out.println(config.get("test.three"));
