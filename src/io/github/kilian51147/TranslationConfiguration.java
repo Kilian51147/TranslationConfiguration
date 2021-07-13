@@ -22,6 +22,11 @@ public class TranslationConfiguration
 	{
 		try
 		{
+			if (!config.exists())
+			{
+				config.createNewFile();
+			}
+			
 			Scanner cnfg = new Scanner(config);
 
 			while(cnfg.hasNext())
