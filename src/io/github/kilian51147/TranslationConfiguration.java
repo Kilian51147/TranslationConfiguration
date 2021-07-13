@@ -32,6 +32,13 @@ public class TranslationConfiguration
 				fw.flush();
 			}
 			
+			File en = new File("lang\\en.lang");
+			
+			if (!en.exists())
+			{
+				en.createNewFile();
+			}
+			
 			Scanner cnfg = new Scanner(config);
 
 			while(cnfg.hasNext())
