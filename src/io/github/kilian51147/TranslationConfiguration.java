@@ -25,6 +25,11 @@ public class TranslationConfiguration
 			if (!config.exists())
 			{
 				config.createNewFile();
+				
+				FileWriter fw = new FileWriter(config);
+
+				fw.write("current=en");
+				fw.flush();
 			}
 			
 			Scanner cnfg = new Scanner(config);
